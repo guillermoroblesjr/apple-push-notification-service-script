@@ -27,6 +27,17 @@ $ openssl pkcs12 -in /path/to/your/certificate.p12 -out /path/to/save/certificat
 # Configuration
 Simply update the `config.json` with your configurations like the path to your `certificate.pem`, path to your private key file (`aps_development.cer`), the name of your app (E.g. `com.guillermorobles.pushnotificationsapp`) and the device token of the device you would like to push the notification to (you'll have to get this from the device). Next update the `payload.json` file with push notification that you will send to Apple's servers. 
 
+
+| Key                         | Description | Example Value |
+| -----------                 | ----------- | -----------   |
+| DATA                        | Path to push notification JSON payload | ./payload.json |
+| CERTIFICATE_FILE_NAME       | Path to PEM certificate | ~/MyAPNsCertificate.pem |
+| CERTIFICATE_KEY_FILE_NAME   | Path to CER certificate | ~/MyAPNsCertificate.cer |
+| TOPIC                       | App Bundle ID | com.guillermorobles.pushnotificationsapp |
+| APNS_HOST_NAME              | Apple's push notification url | <span>api.sandbox.push.apple.com</span> |
+| DEVICE_TOKEN                | Device token | 7ce67f6098bb3e5d3e9f03b1ca6840e1ca5f54d6ad9ef79c752c358879f3a798 |
+<br/>
+
 # Make sure the shell script is executable
 Make the script executable with:
 ```bash 
