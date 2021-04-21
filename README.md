@@ -30,6 +30,11 @@ If the script is not executing then you may have to make it executable. Do that 
 $ chmod u+x ./push.sh
 ```
 
+If you have a *.p12 certificate and need to extract a *.pem file out of it you can do so with:
+```bash
+$ openssl pkcs12 -in MyCertificate.p12 -out MyCertificate.pem -nodes
+```
+
 This uses ***<a href="https://stedolan.github.io/jq/">jq</a>***, which is usually already installed on Mac's and *nix flavors. If not you can easily install it from <a href="https://stedolan.github.io/jq/download/">jq's github website</a>.
 
 This script takes into account <a href="https://developer.apple.com/documentation/usernotifications/sending_push_notifications_using_command-line_tools">Apple's documentation</a> on how to send push notifications using the terminal.
