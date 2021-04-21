@@ -8,7 +8,7 @@ $ ./push.sh send
 
 First, clone this repo and navigate to it.
 
-Simply update the `config.json` with your configurations like the path the your `certificate.pem`, path to your private key file (`aps_development.cer`), the name of your app and the device token of the device you would like to push the notification to. Next update the `payload.json` file with the push notification that you will send to Apple's servers. 
+Simply update the `config.json` with your configurations like the path to your `certificate.pem`, path to your private key file (`aps_development.cer`), the name of your app and the device token of the device you would like to push the notification to. Next update the `payload.json` file with the push notification that you will send to Apple's servers. 
 
 Before sending a push notification you'll want to verify to see that your certificates are valid. A script is included to easily test this out:
 ```bash 
