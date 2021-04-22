@@ -30,12 +30,12 @@ Simply update the `config.json` with your configurations like the path to your `
 
 | Key                         | Description | Example Value |
 | -----------                 | ----------- | -----------   |
-| DATA                        | Path to push notification JSON payload | ./payload.json |
-| CERTIFICATE_FILE_NAME       | Path to PEM certificate | ~/MyAPNsCertificate.pem |
-| CERTIFICATE_KEY_FILE_NAME   | Path to CER certificate | ~/MyAPNsCertificate.cer |
-| TOPIC                       | App Bundle ID | com.guillermorobles.pushnotificationsapp |
-| APNS_HOST_NAME              | Apple's push notification url | <span>api.sandbox.push.apple.com</span> |
-| DEVICE_TOKEN                | Device token | 7ce67f6098bb3e5d3e9f03b1ca6840e1ca5f54d6ad9ef79c752c358879f3a798 |
+| `DATA`                      | Path to push notification JSON payload | ./payload/test.json |
+| `CERTIFICATE_FILE_NAME`     | Path to PEM certificate | ~/MyAPNsCertificate.pem |
+| `CERTIFICATE_KEY_FILE_NAME` | Path to CER certificate | ~/MyAPNsCertificate.cer |
+| `TOPIC`                     | App Bundle ID | com.guillermorobles.pushnotificationsapp |
+| `APNS_HOST_NAME`            | Apple's push notification url | <span>api.sandbox.push.apple.com</span> |
+| `DEVICE_TOKEN`              | Device token | <div style="width: 100%; overflow: scroll;">7ce67f6098bb3e5d3e9f03b1ca6840e1ca5f54d6ad9ef79c752c358879f3a798</div> |
 <br/>
 
 # Make sure the shell script is executable

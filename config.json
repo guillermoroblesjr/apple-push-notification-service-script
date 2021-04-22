@@ -1,5 +1,5 @@
 {
-  "DATA": "./payload.json",
+  "DATA": "./payload/test.json",
   "CERTIFICATE_FILE_NAME": "/path/to/certificate/my-certificate.pem",
   "CERTIFICATE_KEY_FILE_NAME": "/path/to/private/key/file/aps_development.cer",
   "TOPIC": "com.example.MyPushNotificationsApp",
