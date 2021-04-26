@@ -4,5 +4,6 @@
   "CERTIFICATE_KEY_FILE_NAME": "/path/to/private/key/file/aps_development.cer",
   "TOPIC": "com.example.MyPushNotificationsApp",
   "APNS_HOST_NAME": "api.sandbox.push.apple.com",
-  "DEVICE_TOKEN": "myverylongdevicetoken123123123123123123123123123123123"
+  "DEVICE_TOKEN": "myverylongdevicetoken123123123123123123123123123123123",
+  "PUSH_TYPE": "alert"
 }

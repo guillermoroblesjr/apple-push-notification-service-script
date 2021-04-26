@@ -24,6 +24,7 @@ function send() {
   local TOPIC=($(jq -r '.TOPIC' $CONFIG))
   local APNS_HOST_NAME=($(jq -r '.APNS_HOST_NAME' $CONFIG))
   local DEVICE_TOKEN=($(jq -r '.DEVICE_TOKEN' $CONFIG))
+  local PUSH_TYPE=($(jq -r '.PUSH_TYPE' $CONFIG))
 
   # Allows you to pass in variables. Optional, better to use the config.json file.
   # E.g.
@@ -51,6 +52,9 @@ function send() {
       --DEVICE_TOKEN=*)
         local DEVICE_TOKEN="${1#*=}"
         ;;
+      --PUSH_TYPE=*)
+        local PUSH_TYPE="${1#*=}"
+        ;;
       *)
         printf "***************************\n"
         printf "* Error: Invalid argument.*\n"
@@ -72,7 +76,7 @@ function send() {
   echo " "
 
   curl -v --header "apns-topic: ${TOPIC}" \
-  --header "apns-push-type: alert" \
+  --header "apns-push-type: ${PUSH_TYPE}" \
   --cert "${CERTIFICATE_FILE_NAME}" \
   --key-type PEM \
   --data "${DATA}" \

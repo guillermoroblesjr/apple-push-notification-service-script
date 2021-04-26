@@ -36,6 +36,7 @@ Simply update the `config.json` with your configurations like the path to your `
 | `TOPIC`                     | App Bundle ID | com.guillermorobles.pushnotificationsapp |
 | `APNS_HOST_NAME`            | Apple's push notification url | <span>api.sandbox.push.apple.com</span> |
 | `DEVICE_TOKEN`              | Device token | <div style="width: 100%; overflow: scroll;">7ce67f6098bb3e5d3e9f03b1ca6840e1ca5f54d6ad9ef79c752c358879f3a798</div> |
+| `PUSH_TYPE`                 | apns-push-type header | alert |
 <br/>
 
 # Make sure the shell script is executable
@@ -62,4 +63,6 @@ $ ./push.sh send --DEVICE_TOKEN=mysuperlongdevicetoken123123123
 ```
 
 # Notes
-This script takes into account <a href="https://developer.apple.com/documentation/usernotifications/sending_push_notifications_using_command-line_tools">Apple's documentation</a> on how to send push notifications using the terminal.
+This script takes into account <a href="https://developer.apple.com/documentation/usernotifications/sending_push_notifications_using_command-line_tools">Apple's command line documentation</a> on how to send push notifications using the terminal.
+
+<a href="https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/sending_notification_requests_to_apns#2947607">Apple's Push Notification documentation</a>, including other options you can send in the API request.
